@@ -11,7 +11,7 @@ from functools import wraps
 import sqlite3, csv, io, os
 from datetime import datetime
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates/templates/templates')
 app.secret_key = "school-secret-key-change-this"
 DB = "school.db"
 
